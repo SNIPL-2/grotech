@@ -177,7 +177,7 @@ legend{font-family:'Barlow Condensed';font-weight:600;color:var(--navy);padding:
 .bottom-nav{display:none}
 @media(max-width:760px){
   /* Top nav becomes redundant once the bottom tab bar takes over navigation */
-  nav{display:none}
+  nav:not(.bottom-nav){display:none}
   header.header{padding:10px 14px calc(10px + env(safe-area-inset-top,0px));padding-top:calc(10px + env(safe-area-inset-top,0px))}
   .logo{max-height:38px}
   .company-info h1{font-size:1.35rem}
